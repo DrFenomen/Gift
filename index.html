@@ -115,18 +115,18 @@
         var Zahlen=0;
         document.body.appendChild(glImg);
         document.getElementById("foo").addEventListener('click',function() {
-            rasm=rasm+20;
-            marg=marg-10;
+            rasm=rasm+10;
+            marg=marg-5;
             glImg.style.left=`${marg}px`;
             glImg.style.width=`${rasm}px`;
             glImg.style.top=`${marg}px`;
-            if(rasm==200 ){Serd();}
-            if(rasm==600)
+            if(rasm==100 ){Serd();}
+            if(rasm==300)
             {
             document.body.removeChild(glImg);
             document.body.appendChild(audio);
             audio.volume=0.5;
-            const play= audio.play();Zahlen=0;
+            const play= audio.play();
             }
 
         });
