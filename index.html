@@ -77,7 +77,7 @@
             {
             const glImg= document.createElement('img');
             const winX=window.innerWidth -200;
-            const winY=window.innerHeight+300;
+            const winY=window.innerHeight-200;
             const RmX= Math.floor(Math.random() * winX);
             const RmY= Math.floor(Math.random() * winY);
             const glRand=Math.round(Math.random()*6);
@@ -120,7 +120,7 @@
             glImg.style.left=`${marg}px`;
             glImg.style.width=`${rasm}px`;
             glImg.style.top=`${marg}px`;
-            if(rasm==100 ){Serd();}
+            if(rasm==200 ){Serd();}
             if(rasm==300)
             {
             document.body.removeChild(glImg);
