@@ -44,8 +44,8 @@ button:active
 }
 .hi
 {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
 }
 .hi1
@@ -55,7 +55,7 @@ button:active
 }
 .serd
 {
-    width:100px;
+    width:50px;
     position: absolute;
 }
 .hr
