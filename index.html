@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang ="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width">
+    <link rel="stylesheet" href="Style.css">
+    <title>:*</title>
+</head>
+<body>
+    <dif class="Girlanda">
+        <img src="Kras.png">
+        <img src="Kras.png" class="img2">
+    </dif>
+    
+    <button id="foo">Жми Жми</button>
+    <script>
+        document.getElementById("foo").addEventListener('click',function() {
+           const img1= document.createElement('img');
+           const img2= document.createElement('img');
+           const img=Math.round(Math.random()*3);
+           if(img==1)
+           {
+            img1.src="konfiti.png";
+            img1.style.opacity=0;
+            img1.className='hi';
+           }
+           if(img==2)
+           {
+             img1.src="pozd1.png";
+             img1.style.opacity=0;
+             img1.className='hi1';
+           }
+           if(img==3)
+           {
+             img1.src="tortik.png";
+             img1.style.opacity=0;
+             img1.className='hi';
+           }
+           var opac=0;
+           var x=0;
+           
+           const winX=window.innerWidth -100;
+           const winY=window.innerHeight-100;
+           const RandomX= Math.floor(Math.random() * winX);
+           const RandomY= Math.floor(Math.random()*winY);
+            img1.style.left=`${RandomX}px`;
+            img1.style.top=`${RandomY}px`;
+            document.body.appendChild(img1);
+            function Timer() {
+             document.body.removeChild(img1);
+            }
+            function proz(){
+             if(x==0 && opac<2)
+            {
+             opac=opac+0.02;
+             img1.style.opacity=opac;
+            }
+            else
+            {
+             x=1;
+             console.log(opac);
+            if(x==1)
+            {
+             opac=opac-0.02;
+            }
+             img1.style.opacity=opac;
+             
+            }
+            
+            }
+            setInterval(proz,10);
+            setTimeout(Timer,2000);
+        });
+         </script>
+         <script>
+            function Serd()
+            {
+            const glImg= document.createElement('img');
+            const winX=window.innerWidth -200;
+            const winY=window.innerHeight+300;
+            const RmX= Math.floor(Math.random() * winX);
+            const RmY= Math.floor(Math.random() * winY);
+            const glRand=Math.round(Math.random()*6);
+            if(glRand==1)
+         {
+            glImg.src="RedSerd.png";
+         }
+         if(glRand==2)
+         {
+            glImg.src="YellowSerd.png";
+         }
+         if(glRand==3)
+         {
+            glImg.src="orangeSerd.png";
+         }
+         if(glRand==4)
+         {
+            glImg.src="GreenSerd.png";
+         }
+         if(glRand==5)
+         {
+            glImg.src="PinkSerd.png";
+         }
+         if(glRand==6)
+         {
+            glImg.src="blueSerd.png";
+         }
+         glImg.className='serd';
+         glImg.style
+        glImg.style.left=`${RmX}px`;
+        glImg.style.top=`${RmY}px`;
+        const audio=document.createElement('audio');
+        audio.src="schar.mp3";
+        var rasm=100;var marg=RmX;
+        var Zahlen=0;
+        document.body.appendChild(glImg);
+        document.getElementById("foo").addEventListener('click',function() {
+            rasm=rasm+20;
+            marg=marg-10;
+            glImg.style.left=`${marg}px`;
+            glImg.style.width=`${rasm}px`;
+            glImg.style.top=`${marg}px`;
+            if(rasm==200 ){Serd();}
+            if(rasm==600)
+            {
+            document.body.removeChild(glImg);
+            document.body.appendChild(audio);
+            audio.volume=0.5;
+            const play= audio.play();Zahlen=0;
+            }
+
+        });
+        }
+        setTimeout(Serd,1000);
+         </script>
+         <script>
+            const barProgress=document.createElement('hr');
+            barProgress.className='hr';
+            barProgress.style.width=0;
+            var hrWidth=0;let x=0;
+            document.body.appendChild(barProgress);
+            document.getElementById("foo").addEventListener('click',function() {
+                hrWidth=hrWidth+0.6;
+               barProgress.style.width=`${hrWidth}vw`;
+               if(barProgress.style.width==`30vw`)
+               {
+               x=1;
+               document.body.removeChild(barProgress);
+               }
+         if(x==1)
+        {
+            const slova=document.createElement('img');
+            slova.className='hrText';
+            slova.src="slova.png";
+            document.body.appendChild(slova);
+            const audio2=document.createElement('audio');
+            audio2.src="confetti.mp3";
+            const play=audio2.play();
+            x=0;
+        }
+            });
+        
+         </script>
+</body>

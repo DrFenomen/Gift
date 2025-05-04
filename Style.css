@@ -1,0 +1,81 @@
+html
+{
+    height: 100vh;
+}
+body
+{
+    background-color: rgb(201, 75, 142);
+    margin:0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.Girlanda>img
+{
+    height:50vh;
+    position: fixed; width: 50vw;
+}
+.img2
+{
+    margin-left: 50vw;
+}
+.Girlanda
+{
+    border: 0;
+}
+button
+{
+    background-color: rgb(208, 119, 165);
+    display: block;
+    font-size: 3vw;
+    width:30vw;
+    height:10vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10vw;
+    border:0;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-top:50vh;
+}
+button:active
+{
+    background-color: rgb(183, 105, 145);
+}
+.hi
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.hi1
+{
+    width: 300px;
+    position: absolute;
+}
+.serd
+{
+    width:100px;
+    position: absolute;
+}
+.hr
+{
+    background-color:rgb(22, 196, 22);
+    display: block;
+    position: absolute;
+    height: 40px;
+    border-radius: 20px;
+    border:0;
+    margin-top:70vh;
+    margin-left: 35vw;
+}
+.hrText
+{
+    display: block;
+    position: absolute;
+    width: 40vw;
+    border-radius: 20px;
+    border:0;
+    margin-top:65vh;
+    margin-left: 30vw;
+}
